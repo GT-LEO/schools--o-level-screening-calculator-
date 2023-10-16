@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style>
+html,
+*,
+*::before,
+*::after{
+	box-sizing: border-box;
+}
+	.parent{
+		height: 100vh;
+		width: 100vw;
+		overflow-x: hidden;
+		padding: 1rem;
+		padding-top: 0;
+	}
+	header{
+		margin-bottom: 12%;
+		display: flex;
+		gap: 8%;
+		overflow-x: hidden;
+	}	
+section div{
+	margin-bottom: 2%;
+}
+section{
+	box-shadow: 0.1rem 0.3rem 0.5rem 3px rgb(0, 0, 0.7);
+	width: 70%;
+	padding: 4px;
+}
+h3{
+	flex-basis: 60vw;
+	margin:0;
+	color: white;
+		background: darkgreen;
+		display: block;
+		padding-bottom: 2%;
+		padding-top: 2%;
+		padding-left: 2%;
+		padding-right: 2%;
+		text-align: center;
+}
+footer{
+	margin-top: 8%;
+}
+.calculate{
+	font-size: 1.2rem;
+	font-weight: 600;
+	padding: 0.3rem;
+	border-radius: 0.8rem;
+	cursor: pointer;
+}
+header img{
+	height: 5rem;
+	width: 5rem;
+}
+.logo-wrapper{
+	flex-basis: 10%;
+}
+.close a{
+font-size: 1.4rem;
+	background: red;
+	color: white;
+	text-decoration: none;
+	padding: 3px;
+}
+.close{
+	flex-basis: 5%;
+	text-align: center;
+	display: inline-block;
+}
+button:hover{
+	background: darkgreen;
+	color: white;
+}
+.brand{
+	color: darkgreen;
+	font-weight: 600;
+	font-size: 1.2rem;
+}
+.follow{
+	color: darkgreen;
+}
+
+
+	</style>
+</head>
+<body>
+<div class="parent">
+	
+<header>
+	<div class="logo-wrapper">
+	<img src="./other-images/UNN-logo.png">
+</div> 
+	<h3>UNN 2022/2023 O'LEVEL SCREENING AGGREGATE CALCULATOR</h3>
+	<div class="close">
+<a href="../index.html">
+	&#x2715;
+</a>
+	</div>
+</header>
+
+<main>
+	<section>
+		<h4>Enter Your O'level Grades:</h4>
+
+<div>
+<label>Grade</label>
+<input type="text" name="">
+</div>
+
+<div>
+<label>Grade</label>
+<input type="text" name="">
+</div>
+
+<div>
+<label>Grade</label>
+<input type="text" name="">
+</div>
+
+<div>
+<label>Grade</label>
+<input type="text" name="">
+</div>
+	</section>
+
+<aside>
+<h2 class="pop-up">Your Aggregate Score Is 295</h2>
+<button class="calculate">Calculate</button>	
+</aside>
+</main>
+
+
+<footer>
+	<h5>Designed And Built By <span class="brand">GT LEO</span> </h5>
+	<div>
+		<span class="follow">You can follow us on</span>
+		<span class="aligner">
+<a href="#">
+			<img src="">
+</a>
+       
+       <a href="">
+			<img src="">	
+  </a>
+		</span>
+	</div>
+</footer>
+
+</div>
+</body>
+</html>

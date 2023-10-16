@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>pop-up-message</title>
+	<style>
+	html,
+	*,
+	*::before,
+	*::after{
+		box-sizing: border-box;
+	}	
+body{
+	overflow-x: hidden;
+}
+
+.parent{
+	height: 80vh;
+	width: 70vw;
+	margin-left: 15%;
+	box-shadow: 0.1rem 0.3rem 0.5rem 3px rgb(0, 0, 0.7);
+
+}
+header{
+	margin-top: 5%;
+	padding-top: 10%;
+	text-align: center;
+	font-size: 1.3rem;
+	font-weight: 700;
+	color: darkgreen;
+}
+main{
+	margin-top: 15%;
+text-align: center;
+line-height: 1.5rem;
+}
+footer{
+	margin-top: 15%;
+}
+button{
+padding: 6px;
+font-size: 1.2rem;
+background: #0a0ac6;
+cursor: pointer;
+margin-left: 60vw;
+}
+button:hover{
+	background: darkgreen;
+}
+button a{
+	text-decoration: none;
+	color: white;
+}
+span{
+	color: darkgreen;
+	font-size: 1.2rem;
+	font-weight: 600;
+}
+
+	</style>
+
+</head>
+<body>
+	<div class="parent">
+
+<header>Your are welcome to O'level screening calculator site!</header>
+<main>To proceed with this action, click on <span>"OK"</span> to navigate and follow our facebook page as part of our terms and conditions to use this site, after which you can return to this site to proceed with your calculation.</main>
+<footer>
+	<button>
+<a href="">
+	OK
+</a>
+	</button>
+</footer>
+
+</div>
+</body>
+</html>

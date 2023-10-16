@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style>
+html,
+*,
+*::before,
+*::after{
+	box-sizing: border-box;
+}
+	.parent{
+		height: 100vh;
+		width: 100vw;
+		overflow-x: hidden;
+		padding: 1rem;
+		padding-top: 0;
+	}	
+section div{
+	margin-bottom: 2%;
+}
+section{
+	box-shadow: 0.1rem 0.3rem 0.5rem 3px rgb(0, 0, 0.7);
+	width: 70%;
+	padding: 4px;
+}
+h3{
+	margin:0;
+	background: #27953d;
+	color: white;
+	padding: 5px;
+	flex-basis: 65vw;
+}
+footer{
+	margin-top: 10%;
+	padding-bottom: 4%;
+}
+.calculate{
+	font-size: 1.2rem;
+	font-weight: 600;
+	padding: 0.3rem;
+	border-radius: 0.8rem;
+	cursor: pointer;
+}
+header{
+		margin-bottom: 12%;
+		display: flex;
+		gap: 5%;
+		align-items: center;
+		padding-right: 3%;
+	}
+.close a{
+font-size: 1.4rem;
+	background: red;
+	color: white;
+	text-decoration: none;
+	padding: 3px;
+}
+.close{
+	flex-basis: 5%;
+	text-align: center;
+	display: inline-block;
+	flex-basis: 5%;
+}
+header img{
+	height: 5rem;
+	width: 5rem;
+	flex-basis: 10%;
+}
+.calculate:hover{
+	background: #efcc00;
+	color: #222;
+}
+.follow{
+	color: #7c6900;
+}
+.brand{
+	font-size: 1.2rem;
+	font-weight: 600;
+	color: #27953d;
+}
+		
+
+	</style>
+</head>
+<body>
+<div class="parent">
+	
+<header>
+	<img src="./other-images/FUTO_logo.png">
+	<h3>FUTO 2022/2023 O'LEVEL SCREENING AGGREGATE CALCULATOR</h3>
+	<div class="close">
+		<a href="../index.html">
+	&#x2715;
+</a>
+	</div>
+
+</header>
+
+<main>
+	<section>
+		<h4>Enter Your O'level Grades:</h4>
+
+<div>
+<label>Grade</label>
+<input type="text" name="">
+</div>
+
+<div>
+<label>Grade</label>
+<input type="text" name="">
+</div>
+
+<div>
+<label>Grade</label>
+<input type="text" name="">
+</div>
+
+<div>
+<label>Grade</label>
+<input type="text" name="">
+</div>
+	</section>
+
+<aside>
+<h2 class="pop-up">Your Aggregate Score Is 295</h2>
+<button class="calculate">Calculate</button>	
+</aside>
+</main>
+
+
+<footer>
+	<h5>Designed And Built By <span class="brand">GT LEO</span> </h5>
+	<div>
+		<span class="follow">You can follow us on</span>
+		<span class="aligner">
+			<img src="">
+			<img src="">
+		</span>
+	</div>
+</footer>
+
+</div>
+</body>
+</html>
