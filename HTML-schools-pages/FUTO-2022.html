@@ -23,8 +23,11 @@ section div{
 }
 section{
 	box-shadow: 0.1rem 0.3rem 0.5rem 3px rgb(0, 0, 0.7);
-	width: 70%;
+	width: 90%;
 	padding: 4px;
+}
+input{
+	width: 50%;
 }
 h3{
 	margin:0;
@@ -81,7 +84,10 @@ header img{
 	font-weight: 600;
 	color: #27953d;
 }
-		
+.no-sitting{
+display: inline-block;
+white-space: nowrap;
+}		
 
 	</style>
 </head>
@@ -121,6 +127,15 @@ header img{
 <div>
 <label>Grade</label>
 <input type="text" name="">
+</div>
+<div class="no-sitting">
+<label>Single sitting</label>
+	
+<input type="checkbox" name="" class="sitting">
+</div>
+<div>
+<label>Enter UTME Score</label>
+<input type="text" name="" class="utme">
 </div>
 	</section>
 

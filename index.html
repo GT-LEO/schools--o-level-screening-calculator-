@@ -14,29 +14,40 @@
 	*::after{
 box-sizing: border-box;
 	}
+	body{
+		overflow-x: hidden;
+	background: url(./images/background-nature.jpg);
+background-repeat: no-repeat;
+background-size:cover ;
+background-position: center;
+	}
 .parent{
 	height: 100vh;
 	width: 100vw;
 	overflow-x: hidden;
 	pading:4%;
-	background:lightgray ;
-}	
+	background: ;
+}
+
 	ul{
 		list-style: none;
 		position: relative;
+		padding-right: 3%;
 	}
 	ul a{
 		text-decoration: none;
-		color: #00f;
-		background: lavenderblush;
+		color: #fff;
+		background: red;
 		display: block;
+		padding: 3px;
+		border-radius: 5px;
 	}
 	ul li{
 		margin-bottom: 4%;
 	}
 	ul a:hover{
 color: #fff;
-background: #00f;
+background: #1401b0;
 padding: 5px;
 	}
 header{
@@ -45,7 +56,7 @@ header{
   position: fixed;
   padding-top: 3%;
   padding-left: 3%;
-  padding-right: 3%;
+  padding-right: 5%;
   width: 100%;
   background: lavender;
 }
@@ -62,7 +73,7 @@ font-size: 1.5rem;
 nav{
 	display: none;
 	position: absolute;
-	margin-left: -35%;
+	margin-left: -45%;
 }
 
 input{
@@ -82,24 +93,36 @@ main{
 	margin-top:30%;
 }
 main span{
-	color: #00f;
+	color: #1401b0;
 	font-weight: 600;
 }
 h4{
-	color: darkgreen;
+	color: #fff;
+	font: caption;
 	letter-spacing: 1px;
+	border-bottom: 2px solid #fff;
+	display: inline-block;
+	font-size: 1.3rem;
+	font-weight: 700;
 }
 h5{
-	color: blue;
+	color:white;
 	letter-spacing: 1px;
-
+background: #1401b0;
+display: inline-block;
+padding: 4px;
 }
 main div{
 letter-spacing: 1px;
 line-break: 3px;
+color: white;
 }
 main p{
 font-weight: 700;
+font-size: 1.2rem;
+background: lightgray;
+display: inline-block;
+padding: 5px;
 }
 
 @media(min-width:895px){
@@ -137,10 +160,10 @@ ul{
 	 ;
 }
 ul a{
-	background:lavender;
+	background:red;
 	font-size: 0.8rem;
 	margin-top: -12%;
-	border: 1px solid #000;
+	border-radius: 5px;
 }
 main{
 	margin-top: 15%;
@@ -205,6 +228,7 @@ h3{
 
 </header>
 
+<div class="contents">
 
 <main>
 	<section>
@@ -228,6 +252,8 @@ h3{
 
 
             </footer>
+
+          </div>
 
 </div>
 </body>
