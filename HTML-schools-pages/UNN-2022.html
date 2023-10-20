@@ -28,7 +28,7 @@ section div{
 	margin-bottom: 2%;
 }
 section{
-	box-shadow: 0.1rem 0.3rem 0.5rem 3px rgb(0, 0, 0.7);
+	box-shadow: 2px 2px 4px 2px rgb(0, 0, 0.1);
 	width: 90%;
 	padding: 4px;
 }
@@ -113,41 +113,44 @@ white-space: nowrap;
 
 <main>
 	<section>
+		<form id="father">
 		<h4>Enter Your O'level Grades:</h4>
 
 <div>
-<label>Grade</label>
-<input type="text" name="">
+<label for="Grade1">Grade</label>
+<input type="text" name="" class="input" id="Grade1">
 </div>
 
 <div>
-<label>Grade</label>
-<input type="text" name="">
+<label for="Grade2">Grade</label>
+<input type="text" name="" class="input" id="Grade2">
 </div>
 
 <div>
-<label>Grade</label>
-<input type="text" name="">
+<label for="Grade3">Grade</label>
+<input type="text" name="" class="input" id="Grade3">
 </div>
 
 <div>
-<label>Grade</label>
-<input type="text" name="">
+<label for="Grade4">Grade</label>
+<input type="text" name="" class="input" id="Grade4">
 </div>
+
 <div class="no-sitting">
-<label>Single sitting</label>
-	
-<input type="checkbox" name="" class="sitting">
+<label for="check">Single sitting</label>
+<input type="checkbox" id="check" class="sitting">
 </div>
+
 <div>
-<label>Enter UTME Score</label>
-<input type="text" name="" class="utme">
+<label for="score">Enter UTME Score</label>
+<input type="text" id="score" class="utme">
 </div>
+</form>
 	</section>
 
 <aside>
-<h2 class="pop-up">Your Aggregate Score Is 295</h2>
-<button class="calculate">Calculate</button>	
+<h2 class="pop-up"></h2>
+<button class="calculate" onclick="calculateAggregate()">Calculate</button>	
 </aside>
 </main>
 
@@ -157,7 +160,7 @@ white-space: nowrap;
 	<div>
 		<span class="follow">You can follow us on</span>
 		<span class="aligner">
-<a href="#">
+<a href="https://whatsapp.com/channel/0029VaAgetCAzNbtUIy6hu3y">
 			<img src="">
 </a>
        
@@ -168,6 +171,74 @@ white-space: nowrap;
 	</div>
 </footer>
 
+
+
 </div>
+
+
+<script>
+
+  function calculateAggregate(){
+	let form = document.querySelector("form");
+	let input = document.querySelectorAll(".input");
+	let grade1 = parseFloat(document.querySelector("#Grade1").value).toUpperCase();
+	let grade2 = parseFloat(document.querySelector("#Grade2").value).toUpperCase();
+	let grade3 = parseFloat(document.querySelector("#Grade3").value).toUpperCase();
+	let grade4 = parseFloat(document.querySelector("#Grade4").value).toUpperCase();
+	const A1 = "72";
+	const B2 = "64";
+	const B3 = "56";
+	const C4 = "48";
+	const C5 = "40";
+	const C6 = "32";
+	let message = document.querySelector(".pop-up");
+	let sitting = document.querySelector(".sitting");
+ let bonus = sitting.checked;
+let utme = document.querySelector(".utme").value;
+
+ grade1, grade2, grade3, grade4 = A1 || B2 || B3 || C4 || C5 || C6;
+if(utme > 0 && utme < 401){
+console.log("UTME Score is valid!");
+}  
+else{
+	console.log("Invalid UTME Score!");
+	message.innerText= "invalid UTME score!";
+}
+let utmeAggregate = utme*0.8;
+
+let sum = (grade1 +grade2 + grade3 + grade4);
+
+let waec = sum*0.2;
+let total = utmeAggregate + waec;
+console.log(total);
+message.innerText = `Your aggregate score is ${total}`
+
+if (bonus){
+	total += 8
+	console.log(total);
+message.innerText = `Your aggregate score is ${total}`;
+}
+
+
+	
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+
+
+
 </body>
 </html>
