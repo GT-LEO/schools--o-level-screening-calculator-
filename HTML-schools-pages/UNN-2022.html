@@ -4,108 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title></title>
-    <style>
-        html, *, *::before, *::after {
-            box-sizing: border-box;
-        }
-
-        .parent {
-            height: 100vh;
-            width: 100vw;
-            overflow-x: hidden;
-            padding: 1rem;
-            padding-top: 0;
-        }
-
-        header {
-            margin-bottom: 12%;
-            display: flex;
-            gap: 8%;
-            overflow-x: hidden;
-        }
-
-        section div {
-            margin-bottom: 2%;
-        }
-
-        section {
-            box-shadow: 2px 2px 4px 2px rgb(0, 0, 0.1);
-            width: 90%;
-            padding: 4px;
-        }
-
-        input {
-            width: 50%;
-        }
-
-        h3 {
-            flex-basis: 60vw;
-            margin: 0;
-            color: white;
-            background: darkgreen;
-            display: block;
-            padding-bottom: 2%;
-            padding-top: 2%;
-            padding-left: 2%;
-            padding-right: 2%;
-            text-align: center;
-        }
-
-        footer {
-            margin-top: 8%;
-        }
-
-        .calculate {
-            font-size: 1.2rem;
-            font-weight: 600;
-            padding: 0.3rem;
-            border-radius: 0.8rem;
-            cursor: pointer;
-        }
-
-        header img {
-            height: 5rem;
-            width: 5rem;
-        }
-
-        .logo-wrapper {
-            flex-basis: 10%;
-        }
-
-        .close a {
-            font-size: 1.4rem;
-            background: red;
-            color: white;
-            text-decoration: none;
-            padding: 3px;
-        }
-
-        .close {
-            flex-basis: 5%;
-            text-align: center;
-            display: inline-block;
-        }
-
-        button:hover {
-            background: darkgreen;
-            color: white;
-        }
-
-        .brand {
-            color: darkgreen;
-            font-weight: 600;
-            font-size: 1.2rem;
-        }
-
-        .follow {
-            color: darkgreen;
-        }
-
-        .no-sitting {
-            display: inline-block;
-            white-space: nowrap;
-        }
-    </style>
+    
+    <link rel="stylesheet" type="text/css" href="../css/unn-2022.css">
 </head>
 <body>
 <div class="parent">
@@ -137,7 +37,7 @@
                 </div>
                 <div>
                     <label for="Grade4">Grade 4</label>
-                    <input type="text" name="" class "input" id="Grade4">
+                    <input type="text" name="" class ="input" id="Grade4">
                 </div>
                 <div class="no-sitting">
                     <label for="check">Single sitting</label>
@@ -170,71 +70,7 @@
     </footer>
 </div>
 </body>
-<script>
-function calculateAggregate() {
-    // Convert the input to uppercase
-    let grade1 = document.querySelector("#Grade1").value.toUpperCase();
-    let grade2 = document.querySelector("#Grade2").value.toUpperCase();
-    let grade3 = document.querySelector("#Grade3").value.toUpperCase();
-    let grade4 = document.querySelector("#Grade4").value.toUpperCase();
+<script src="../js/unn-2022.js">
 
-    const A1 = 72;
-    const B2 = 64;
-    const B3 = 56;
-    const C4 = 48;
-    const C5 = 40;
-    const C6 = 32;
-
-    const message = document.querySelector(".pop-up");
-    const sitting = document.querySelector(".sitting");
-    const bonus = sitting.checked;
-    const utme = parseFloat(document.querySelector("#score").value);
-
-    if (utme > 0 && utme < 401) {
-        console.log("UTME Score is valid!");
-    } else {
-        console.log("Invalid UTME Score!");
-        message.innerText = "Invalid UTME score or O'level grade(s)!";
-        message.style.color = "red";
-        return;
-    }
-
-    let utmeAggregate = utme * 0.8;
-    let waec = 0;
-
-    function getGradePoints(grade) {
-        switch (grade) {
-            case "A1":
-                return A1;
-            case "B2":
-                return B2;
-            case "B3":
-                return B3;
-            case "C4":
-                return C4;
-            case "C5":
-                return C5;
-            case "C6":
-                return C6;
-            default:
-                // Handle invalid grades
-                console.log("Invalid O'level grade");
-         message.innerText = "Invalid O'level grade!";
-            message.style.color = "red";
-                return 0;
-        }
-    }
-
-    waec += getGradePoints(grade1) + getGradePoints(grade2) + getGradePoints(grade3) + getGradePoints(grade4);
-
-    if (bonus) {
-        waec += 40;
-    }
-
-    let total = waec * 0.2 + utmeAggregate;
-    console.log(total);
-    message.innerText = `Your aggregate score is ${total}`;
-    message.style.color = "darkgreen"
-}
 </script>
 </html>

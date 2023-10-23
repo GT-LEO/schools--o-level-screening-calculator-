@@ -4,103 +4,15 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title></title>
-	<style>
-html,
-*,
-*::before,
-*::after{
-	box-sizing: border-box;
-}
-body{
-	overflow-x: hidden;
-}
-	.parent{
-		height: 100vh;
-		width: 100vw;
-		overflow-x: hidden;
-		padding: 1rem;
-		padding-top: 0;
-	}	
-section div{
-	margin-bottom: 2%;
 
-}
-section{
-	box-shadow: 2px 2px 4px 2px rgb(0, 0, 0.1);
-	width: 90%;
-	padding: 4px;
-}
-input{
-	width: 50%;
-}
-h3{
-	background:#05055f /*#faeacc #6e0c0e #faaa14*/;
-	margin:0;
-	color: white;
-	padding: 5px;
-	text-align: center;
-	flex-basis: 65vw;
-}
-footer{
-	margin-top: 10%;
-	padding-bottom: 5%;
-}
-.calculate:hover{
-	color: white;
-	background: #6e0c0e;
-}
-.calculate{
-	font-size: 1.2rem;
-	font-weight: 600;
-	padding: 0.3rem;
-	border-radius: 0.8rem;
-	cursor: pointer;
-}
-header{
-		margin-bottom: 12%;
-		display: flex;
-		gap: 5%;
-		align-items: flex-start;
-		padding-right: 3%;
-	}
-	.close a{
-font-size: 1.4rem;
-	background: red;
-	color: white;
-	text-decoration: none;
-	padding: 3px;
-	flex-basis: 5%;
-}
-.close{
-	flex-basis: 5%;
-	text-align: center;
-	display: inline-block;
-}
-header img{
-	height:5rem ;
-	width: 5rem;
-	flex-basis: 10%;
-}
-.brand{
-	font-size: 1.2rem;
-	font-weight: 600;
-	color: #05055f;
-}
-.follow{
-	color: #6e0c0e;
-}	
-.no-sitting{
-display: inline-block;
-white-space: nowrap;
-}
-	</style>
+	<link rel="stylesheet" type="text/css" href="../css/unizik-2023.css">
 </head>
 <body>
 <div class="parent">
 	
 <header>
 	<img src="./other-images/unizikLogo.jpg">
-	<h3>UNIZIK 2022/2023 O'LEVEL SCREENING AGGREGATE CALCULATOR</h3>
+	<h3>UNIZIK 2023/2024 O'LEVEL SCREENING AGGREGATE CALCULATOR</h3>
 	<div class="close">
 		<a href="../index.html">
 	&#x2715;
@@ -115,22 +27,22 @@ white-space: nowrap;
 
 <div>
 <label>Grade</label>
-<input type="text" name="" class="input">
+<input type="text" name="" id="Grade1" class="input">
 </div>
 
 <div>
 <label>Grade</label>
-<input type="text" name="" class="input">
+<input type="text" name="" id="Grade2" class="input">
 </div>
 
 <div>
 <label>Grade</label>
-<input type="text" name="" class="input">
+<input type="text" name="" id="Grade3" class="input">
 </div>
 
 <div>
 <label>Grade</label>
-<input type="text" name="" class="input">
+<input type="text" name="" id="Grade4" class="input">
 </div>
 <div>
 	<div class="no-sitting">
@@ -140,13 +52,13 @@ white-space: nowrap;
 </div>
 <div>
 <label>Enter UTME Score</label>
-<input type="text" name="" class="utme">
+<input type="text" name="" id="score" class="utme">
 </div>
 	</section>
 
 <aside>
-<h2 class="pop-up">Your Aggregate Score Is 295</h2>
-<button class="calculate">Calculate</button>	
+<h2 class="pop-up"></h2>
+<button class="calculate" onclick="calculateAggregate()">Calculate</button>	
 </aside>
 </main>
 
@@ -163,5 +75,12 @@ white-space: nowrap;
 </footer>
 
 </div>
+
+
+
+<script src="../js/unizik-2023.js">
+	
+
+</script>
 </body>
 </html>
