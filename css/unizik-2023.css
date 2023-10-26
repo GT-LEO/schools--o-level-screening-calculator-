@@ -23,6 +23,13 @@ section{
 	width: 90%;
 	padding: 4px;
 }
+ .aligner a{
+            margin-left: 3%;
+        }
+        .aligner img{
+height: 1.6rem;
+width: 1.6rem;
+        }
 input{
 	width: 50%;
 }

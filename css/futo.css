@@ -22,6 +22,13 @@ section{
 input{
 	width: 50%;
 }
+ .aligner a{
+            margin-left: 3%;
+        }
+        .aligner img{
+height: 1.6rem;
+width: 1.6rem;
+        }
 h3{
 	margin:0;
 	background: #27953d;
