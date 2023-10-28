@@ -1,6 +1,9 @@
  html, *, *::before, *::after {
             box-sizing: border-box;
         }
+        body{
+            overflow-x: hidden;
+        }
 
         .parent {
             height: 100vh;
